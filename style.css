@@ -1,22 +1,26 @@
 body {
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Roboto', sans-serif;
+}
 
 header {
   display: flex;
   justify-content: space-between;
   padding: 20px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12); }
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
+}
 
 nav {
   display: flex;
-  align-items: center; }
+  align-items: center;
+}
 
 h1 {
   margin-left: 35px;
   font-weight: 500;
   font-size: 20px;
   line-height: 23px;
-  color: rgba(0, 0, 0, 0.87); }
+  color: rgba(0, 0, 0, 0.87);
+}
 
 main {
   display: flex;
@@ -24,7 +28,8 @@ main {
   padding-top: 79px;
   padding-left: 30px;
   padding-right: 155px;
-  padding-bottom: 42px; }
+  padding-bottom: 42px;
+}
 
 .tools ul {
   width: 228px;
@@ -33,23 +38,30 @@ main {
   line-height: 24px;
   align-items: center;
   color: rgba(0, 0, 0, 0.541327);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12); }
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
+}
   .tools ul:first-child {
-    margin-bottom: 92px; }
+    margin-bottom: 92px;
+  }
 .tools ul li {
   display: flex;
   margin: 15px 18px;
-  max-width: 200px; }
+  max-width: 200px;
+}
   .tools ul li:nth-child(2) {
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+  }
   .tools ul li p {
-    margin-left: 35px; }
+    margin-left: 35px;
+  }
 .tools .border {
   width: 100%;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.12); }
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
 
 .canvas-list input[type="radio"] {
-  display: none; }
+  display: none;
+}
 .canvas-list ul {
   width: 228px;
   padding: 12px 0;
@@ -57,12 +69,15 @@ main {
   line-height: 24px;
   align-items: center;
   color: rgba(0, 0, 0, 0.541327);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12); }
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
+}
 .canvas-list li {
   margin: 20px;
   padding: 10px;
-  cursor: pointer; }
+  cursor: pointer;
+}
 .canvas-list input[type="radio"]:checked + label li {
-  background-color: gray; }
+  background-color: gray;
+}
 
 /*# sourceMappingURL=style.css.map */

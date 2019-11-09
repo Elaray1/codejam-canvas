@@ -1,33 +1,27 @@
 window.onload = function() {
-  var canvas = document.getElementById('canvas');
+  const canvas = document.getElementById('canvas');
   ctx = canvas.getContext("2d");
-  var A = [
+  const A = [
     ["00BCD4", "FFEB3B","FFEB3B","00BCD4"],
     ["FFEB3B", "FFC107","FFC107","FFEB3B"],
     ["FFEB3B", "FFC107","FFC107","FFEB3B"],
     ["00BCD4", "FFEB3B","FFEB3B","00BCD4"]
   ];
-  function small() {
+  function calculateTheSmall() {
     scale = 128;
-    for (var row = 0; row < A.length; row++) {
-      for (var col = 0; col < A[0].length; col++) {
+    for (let row = 0; row < A.length; row++) {
+      for (let col = 0; col < A[0].length; col++) {
         ctx.fillStyle = '#' + A[row][col];
         ctx.fillRect(col * scale, row * scale, scale, scale);
       }
     }
   }
-
-  small();
-
-  const smallCanvas = document.querySelector(".canvas-list label .c4");
+  calculateTheSmall()
+  const smallCanvas = document.querySelector(".canvas-list label .canvas-label__4x4");
   smallCanvas.addEventListener('click', () => {
-    small();
+    calculateTheSmall()
   });
-
-
-
-
-  var B = [
+  const codewarsCanvas = [
     [
       [
         255,
@@ -6237,33 +6231,26 @@ window.onload = function() {
       ]
     ]
   ];
-
-  function mid() {
+  function calculateTheMiddle() {
   scale = 16;
-    for (var row = 0; row < B.length; row++) {
-      for (var col = 0; col < B[0].length; col++) {
-        ctx.fillStyle = `rgba(${B[row][col][0]}, ${B[row][col][1]}, ${B[row][col][2]})`;
+    for (let row = 0; row < codewarsCanvas.length; row++) {
+      for (let col = 0; col < codewarsCanvas[0].length; col++) {
+        ctx.fillStyle = `rgba(${codewarsCanvas[row][col][0]}, ${codewarsCanvas[row][col][1]}, ${codewarsCanvas[row][col][2]})`;
         ctx.fillRect(col * scale, row * scale, scale, scale);
       }
     }
   }
-
-  const midCanvas = document.querySelector(".canvas-list label .c32");
+  const midCanvas = document.querySelector(".canvas-list label .canvas-label__32x32");
   midCanvas.addEventListener('click', () => {
-    mid();
+    calculateTheMiddle();
   });
-
-
   let img = new Image();
   img.src = './assets/image.png';
-
-  function image() {
+  function rsschoolCanvas() {
     ctx.drawImage(img, 0, 0, 512, 512);
   }
-
-
-  const imgCanvas = document.querySelector(".canvas-list label .c256");
+  const imgCanvas = document.querySelector(".canvas-list label .canvas-label__256x256");
   imgCanvas.addEventListener('click', () => {
-    image();
+    rsschoolCanvas();
   });
 }
