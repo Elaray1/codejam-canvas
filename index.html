@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img src="assets\menu_button.png" alt="menu" width="18" height="12">
+        <h1>CodeJam - Canvas</h1>
+      </nav>
+      <img src="assets\Shape.png" width="4" height="16">
+    </header>
+    <main>
+      <div class="tools">
+        <ul>
+          <li><img src="assets\paint_bucket.png" alt="" width="20" height="18"><p>Paint bucket</p></li>
+          <li><img src="assets\choose_color.png" alt="" width="20" height="20"><p>Choose color</p></li>
+          <div class="border"></div>
+          <li><img src="assets\move.png" alt="" width="20" height="20"><p>Move</p></li>
+          <li><img src="assets\transform.png" alt="" width="20" height="15.63"><p>Transform</p></li>
+        </ul>
+        <ul>
+          <li><img src="assets\current_color.png" alt="" width="20" height="20"><p>Current color</p></li>
+          <li><img src="assets\prev_color.png" alt="" width="20" height="20"><p>Prev color</p></li>
+          <div class="border"></div>
+          <li><img src="assets\red_color.png" alt="" width="20" height="20"><p>red</p></li>
+          <li><img src="assets\blue_color.png" alt="" width="20" height="20"><p>blue</p></li>
+        </ul>
+      </div>
+      <canvas id="canvas" width="512" height="512">
+      </canvas>
+      <div class="canvas-list">
+        <ul>
+          <input id="cl-1" type="radio" name="canvas-list" value="" checked>
+          <label for="cl-1"><li class="canvas-label__4x4">4x4</li></label>
+          <input id="cl-2" type="radio" name="canvas-list" value="">
+          <label for="cl-2"><li class="canvas-label__32x32">32x32</li></label>
+          <input id="cl-3" type="radio" name="canvas-list" value="">
+          <label for="cl-3"><li class="canvas-label__256x256">256x256</li></label>
+        </ul>
+      </div>
+    </main>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
